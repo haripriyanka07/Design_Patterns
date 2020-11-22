@@ -1,0 +1,69 @@
+﻿ZeMoSo Learning
+
+
+Design Patterns
+
+
+1. Creational Design Patterns ~ Object Creation
+Mechanism or creating an object in a manner suitable to the situation.
+* Prototype
+        Making exact copy and applying required modifications.
+        Clonable interface.
+* Builder
+Problems overcomed:
+Multiple arguments in a constructor which is hard to maintain order.
+We send only required parameters.
+* Singleton
+        Only one instance of class should exist (EX:login)
+        constructor should be private.
+        Public method for returning instance 
+        Instance type - private, static
+                Eager initialization ~ at that time
+                Lazy initialization ~ when ever there is a need
+                Thread safe method
+                Thread safe block
+* Factory Method
+        Used when we have multiple sub classes of a superclass and based on the input particular class will be invoked.
+* Abstract factory method
+2. Behavioural Design Patterns ~ Object behaviour and communication
+Interaction and responsibility of objects
+* Chain of responsibility
+For ex: Loan, if loan amount is more then it need to be approved by the upper management this is where the chain of responsibility arrives.
+* Commands
+It encapsulates the objects behind and gives only the commands
+* Interpreter 
+* Iterator
+In which an iterator is used to traverse a container and access the container’s elements 
+* Mediator
+Used to reduce communication complexity between multiple objects and classes
+* Memento
+Used to restore state of an obj to a previous state.
+* Observer
+Used when there is one to many relationship between obj such as if one obj is modified, its dependent obj are notified.
+* State
+Used when an obj changes its behaviour based on its internal state.
+* Strategy
+Used when we have multiple algorithms for a specific task and client decides the actual implementation to be used at runtime.
+* Template
+An abstract class defines ways/templates to execute its methods.
+* Visitor
+We use a visitor class which changes the executing alg of an element class. By this way, execution algo of an element can vary as and when visitor varies.
+3. Structural Design Patterns ~ Assemble Objects
+        Simple way to create a relationship between entities.
+* Adapter
+        When obj offering same features, but has dif interface
+        It allows existing classes to be used with others without modifying code
+* Bridge
+Used when we’ve hierarchies in both interfaces as well as 
+implementations and we want to hide the implementation from client
+* Composite
+* Decorator 
+Used whenever we want to modify functionality of an object at runtime.
+* Facade
+Used when there’re multiple interfaces of similar kind of jobs, then we add a Facade interface, which provide better interface to these interfaces and client. It basically used for routing.
+We’ll implement a facade helper class, which will route to method related to specific class based on input.
+* Flyweight
+                        Used when we need to create many obj of a class. We use it to reduce
+creation of obj
+* Proxy        
+Used when you want to control access
